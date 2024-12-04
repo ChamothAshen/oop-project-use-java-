@@ -1,0 +1,280 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,600;6..12,700&display=swap');
+
+:root{
+	--main-color: #800080;
+}
+
+*{
+	font-family: 'Nunito', sans-serif;
+	margin:0; padding:0;
+	box-sizing: border-box;
+	outline: none; border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: .2s linear;
+}
+
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 7rem;
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+	width: 1rem;	
+}
+
+html::-webkit-scrollbar-track{
+	background: #444;
+}
+
+html::-webkit-scrollbar-thumb{
+	background: var(--main-color);
+	border-radius: 5rem;
+}
+
+body{
+	background:#fefefe;
+	flex-direction: column;
+}
+
+section{
+	padding: 2rem 9%;
+}
+
+.heding{
+	text-align: center;
+	padding-bottom: 2rem;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+
+.heding span{
+	color: var(--main-color);
+	text-transform: uppercase;
+}
+
+.butn{
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 1rem;
+	font-size: 1.7rem;
+	border-radius: .5rem;
+	background: #800080;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.btn:hover{
+	background: #301934;
+}
+
+.home .content{
+	text-align: center;
+	padding-top: 8rem;
+	margin: 4rem auto;
+	max-width: 70rem;
+}
+
+.home .content h3{
+	color: #000000;
+	font-size: 4.5rem;
+	text-transform: uppercase;
+}
+
+.home .content h3 span{
+	color: #800080;
+	text-transform: uppercase;
+}
+
+.swiper {
+      width: 80%;
+      padding-top: 50px;
+      height: 100%;
+    }
+
+ .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+    }
+
+.swiper-slide img {
+      display: block;
+      width: 100%;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
+    }
+
+.service .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+	gap: 1.5rem;
+}
+
+.service .box-container .box{
+	border-radius: 2rem;
+	background: #808080;
+	text-align: center;
+	padding: 3.5rem;
+}
+
+.service .box-container .box i{
+	height: 6rem;
+	width: 6rem;
+	line-height: 6rem;
+	border-radius: 50%;
+	font-size: 2.5rem;
+	background: var(--main-color);
+	color: #000000;
+}
+
+.service .box-container .box h3{
+	font-size: 2rem;
+	color: #fff;
+	padding: 1rem 0;
+}
+
+.about .row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;	
+}
+
+.about .row .image{
+	flex: 1 1 45rem;
+	padding: 1rem;
+}
+
+.about .row .image img{
+	width: 100%;
+	border-radius: .5rem;
+	padding: 1rem solid #333;
+}
+
+.about .row .image{
+	flex: 1 1 45rem;
+	padding: 1rem;
+}
+
+.about .row .content{
+	flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+	font-size: 3.5rem;
+	color: #545454;
+}
+
+.about .row .content p{
+	font-size: 1.5rem;
+	color: #808080;
+	padding: 1rem 0;
+	line-height: 2;
+}
+
+.gallery .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+	gap: 1.5rem;
+}
+
+.gallery .box-container .box{
+	position: relative;
+	border: 1rem solid #333;
+	border: .5rem;
+	height: 25rem;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.gallery .box-container .box img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.gallery .box-container .box:hover img{
+	transform: scale(1.1);
+	filter: grayscale();
+}
+
+.gallery .box-container .box .title{
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	background: #808080;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 1rem;
+	font-size: 2rem;
+}
+
+.gallery .box-container .box:hover .title{
+	top: 0;
+}
+
+/*Contact us css*/
+.contact form{
+	max-width: 70rem;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.contact form .inputBox{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+	width: 100%;
+	background: #333;
+	border-radius: .5rem;
+	padding: 1rem;
+	margin: .7rem 0;
+	font-size: 1.5rem;
+	color: #fff;
+	text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder{
+	color: #808080;
+	text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus{
+	background: #ffffff;
+}
+
+.contact form .inputBox input{
+	width: 100%;
+}
+
+.contact form textarea{
+	resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
